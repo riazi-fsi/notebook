@@ -26,7 +26,7 @@ function NoteInput() {
       <textarea className='w-full h-60' value={text}
         onChange={e => setText(e.target.value)}
         placeholder='Enter Your Note Here' />
-      <ColorButton setbgColor={setBgColor} bgColor={bgColor} />
+      <ColorButton setBgColor={setBgColor} bgColor={bgColor} />
       <button onClick={addNewNote}>Add</button>
 
     </div>

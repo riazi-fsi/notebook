@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NoteItem(items,focus) {
+function NoteItem({items,focus}) {
   return (
     <div>
         {items.length>0? items.map((item)=>(

@@ -1,8 +1,13 @@
 import React from 'react'
+import Search from './Search'
 
 function Header() {
   return (
-    <div>this is the header</div>
+    <div className='h-40'>
+    <p className='font-bold  '>Notes Application</p>
+
+      <Search />
+    </div>
   )
 }
 

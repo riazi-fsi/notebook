@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ColorButton({ bgColor, serBgColor }) {
+function ColorButton({ bgColor, setBgColor }) {
   const colors = ["red", "yellow", "blue", "stone"];
   const handleClick = (e) => {
-    serBgColor(e.target.value)
+    setBgColor(e.target.value)
   }
   return (
     <div>

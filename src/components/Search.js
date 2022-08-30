@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { setSearchText } from '../redux/notes/noteSlice'
 
 function Search() {
+  const dispatch = useDispatch();
+  const searchValue = useSelector((state => state.setSearchText))
+  const handleChange = (e) => {
+    const text = e.target.value;
+    dispatch(setSearchText(text))
+  }
   return (
     <div>
-      <input type="text" className='mt-6' value={''}/>
+      <input type="text" className='mt-6'
+        placeholder='search...'
+        onChange={handleChange}
+        value={searchValue} />
     </div>
   )
 }

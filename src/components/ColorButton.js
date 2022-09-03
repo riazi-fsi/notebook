@@ -1,7 +1,7 @@
 import React from 'react'
 
 function ColorButton({ bgColor, setBgColor }) {
-  const colors = ["red", "yellow", "blue", "stone"];
+  const colors = ["red", "yellow", "blue", "orange"];
   const handleClick = (e) => {
     setBgColor(e.target.value)
   }

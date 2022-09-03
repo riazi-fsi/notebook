@@ -11,7 +11,7 @@ function Search() {
   }
   return (
     <div>
-      <input type="text" className='mt-6'
+      <input type="text" className='mt-6 p-2 border border-purple-600'
         placeholder='search...'
         onChange={handleChange}
         value={searchValue} />

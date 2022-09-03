@@ -14,6 +14,10 @@ function NoteInput() {
       alert("Enter Somthings")
       return
     }
+    if(text.length > 0){
+      setText('')
+
+    }
     const note = items.filter(item => item.note === text)
     if (note.length > 0) {
       alert("This Note Exists in the store")
@@ -23,11 +27,11 @@ function NoteInput() {
   }
   return (
     <div className='w-full h-60 shadow-md shadow-gray-700'>
-      <textarea className='w-full h-60' value={text}
+      <textarea className='w-full h-60 p-2' value={text}
         onChange={e => setText(e.target.value)}
         placeholder='Enter Your Note Here' />
       <ColorButton setBgColor={setBgColor} bgColor={bgColor} />
-      <button className='bg-green-700 m-2 p-4 font-bold text-white rounded-md ' onClick={addNewNote}>Add</button>
+      <button className='bg-green-700 m-2 p-4 font-bold text-white w-32 rounded-md ' onClick={addNewNote}>Add</button>
 
     </div>
   )

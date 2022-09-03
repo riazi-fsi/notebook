@@ -27,7 +27,7 @@ function NoteInput() {
         onChange={e => setText(e.target.value)}
         placeholder='Enter Your Note Here' />
       <ColorButton setBgColor={setBgColor} bgColor={bgColor} />
-      <button onClick={addNewNote}>Add</button>
+      <button className='bg-green-700 m-2 p-4 font-bold text-white rounded-md ' onClick={addNewNote}>Add</button>
 
     </div>
   )

@@ -9,8 +9,8 @@ function ColorButton({ bgColor, setBgColor }) {
     <div>
       {
         colors.map((color, index) => (
-          <button onClick={ handleClick} value={color} key={index}
-            className={` w-8 h-8 m-2  bg-${color}-600 ${color === bgColor ? "h-12" : null}`} />
+          <button onClick={handleClick} value={color} key={index}
+            className={` w-8 h-8 m-2  rounded-full bg-${color}-600 ${color === bgColor ? "h-12" : null}`} />
         ))
       }
     </div>

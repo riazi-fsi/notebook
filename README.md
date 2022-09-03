@@ -1,8 +1,5 @@
-it is a sample Project :eshop  
-
-
-
-eshop website - add item - remove item - toatl price
+it is a sample Project :Notebook 
+ add note - show note - search
 
 i use 
-React Hook- React Context - React Router 6 - Tailwind - Matrial UI-
+React Hook- Redux-toolkit - React Redux -Tailwind 

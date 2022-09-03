@@ -6,7 +6,7 @@ function NoteItem({items,focus}) {
 
     <div className='flex justify-center'>
         {items.length>0? items.map((item)=>(
-            <p className='m-4 p-2' style={{backgroundColor:item.bgColor}} key={item.id}>{item.note} </p>
+            <p className='m-4 p-2 font-bold' style={{backgroundColor:item.bgColor}} key={item.id}>{item.note} </p>
         )):
         focus && <div> Note Not Found</div>
         }
